@@ -5,9 +5,24 @@ import Footer from './Components/Footer/Footer'
 import IndianOil from './Pages/IndianOil/IndianOil'
 import DiversePortfolio from './Pages/DiversePortfolio/DiversePortfolio'
 import ChairmanMessage from './Pages/ChairmanMessage/ChairmanMessage'
-import Governance from './Pages/Governance/Governance'
+
 import BusinessModel from './Pages/BusinessModel/BusinessModel'
 import MaterialityAssessment from './Pages/MaterialityAssessment/MaterialityAssessment'
+
+import EnergisedLeadership from './Pages/EnergisedLeadership/EnergisedLeadership'
+import BoardProfile from './Pages/BoardProfile/BoardProfile'
+import SDG from './Pages/SDG/SDG'
+import FinancialCapital from './Pages/FinancialCapital/FinancialCapital'
+import Awards from './Pages/Awards/Awards'
+import GovernanceOfRisk from './Pages/GovernanceOfRisk/GovernanceOfRisk'
+import Governance from './Pages/Governance/Governance'
+import PerformanceHigh from './Pages/PerformanceHigh/PerformanceHigh'
+import StakeholderEngagement from './Pages/StakeholderEngagement/StakeholderEngagement'
+import ManufacturedCapital from './Pages/ManufacturedCapital/ManufacturedCapital'
+import NaturalCapital from './Pages/NaturalCapital/NaturalCapital'
+import HumanCapital from './Pages/HumanCapital/HumanCapital'
+import IntellectualCapital from './Pages/IntellectualCapital/IntellectualCapital'
+import SRCapital from './Pages/SRCapital/SRCapital'
 import LandingPage from './Pages/Landingpage/Landingpage'
 
 function App() {
@@ -18,9 +33,22 @@ function App() {
          {/* <IndianOil/>
          <DiversePortfolio/> */}
          {/* <ChairmanMessage/> */}
-         {/* <Governance/> */}
+          {/* <GovernanceOfRisk/> */}
          {/* <BusinessModel/> */}
-         {/* <MaterialityAssessment/> */}
+         {/* {/* <MaterialityAssessment/> */} */}
+         {/* <EnergisedLeadership/> */}
+         {/* <BoardProfile/> */}
+         {/* <SDG/> */}
+         {/* <FinancialCapital/> */}
+         {/* <Awards/> */}
+         {/* <Governance/> */}
+         {/* <PerformanceHigh/> */}
+         {/* <StakeholderEngagement/> */}
+         {/* <ManufacturedCapital/> */}
+        {/* <NaturalCapital/>  */}
+        {/* <IntellectualCapital/> */}
+        <SRCapital/>
+         {/* <HumanCapital/> */}
          <Footer/>
     </div>
   )

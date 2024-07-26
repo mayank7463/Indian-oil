@@ -3,164 +3,91 @@ import React from 'react'
 function Governance() {
   return (
     <div className='marginal'>
-       <div>
-             <p className='lg:text-3xl text-2xl font-bold py-4'>Governance of Risks</p>
-             <p className='text-[#12af7e]  font-extrabold lg:text-4xl text-3xl py-4'>Mitigating Risks
-             with Agility</p>
-             <p className='text-[#58595b] lg:text-2xl text-xl py-4'>At IndianOil, we acknowledge the fact that our operating environment is prone
-                to volatility, emanating from both national and international factors. Hence, our
-                risk management framework is designed to systematically identify, evaluate
-                and mitigate potential risks, ensuring the resilience of our business model.</p>
-         </div>
-         <div>
-              <p className='text-[#f37126] font-bold py-4 text-2xl'>Risk Governance Structure</p>
-              <p className='py-8 text-xl'>The Board of Directors supervises and strengthens the risk management framework after conducting due diligence of
-                potential risks. The Risk Management Committee (RMC) is responsible for reviewing and approving risk management
-                policies and guidelines. The Committee ensures that the risk management practices align with our overarching
-                objectives and regulatory requirements.</p>
-         </div>
-         <div>
-              <p className='text-[#f37126] font-bold py-4 text-xl'>Multi-level risk management</p>
-              <div className='grid lg:grid-cols-4 sm:grid-cols-1 gap-4'>
-                  <div>
-                       <img src="./Governance/riskm-1.jpg" alt="" />
-                  </div>
-                  <div>
-                       <img src="./Governance/riskm-2.jpg" alt="" />
-                  </div>
-                  <div>
-                       <img src="./Governance/riskm-3.jpg" alt="" />
-                  </div>
-                  <div>
-                       <img src="./Governance/riskm-4.jpg" alt="" />
-                  </div>
-              </div>
-              <div>
-                  <img src="./Governance/riskm-5.jpg" alt="" />
-              </div>
-         </div>
-         <div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold py-4 text-xl'>Market Competitiveness Risk</p>
-                  <p className='py-8 text-xl'>Losing competitiveness due to various factors such as increasing competition, technological advancements, and changing consumer
-                    preferences continue to be a potential risk. These challenges pose threats to our market share, profitability and ability to adapt to
-                    evolving industry dynamics, necessitating strategic initiatives to maintain our competitive edge.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div>
-                              <img src="./Governance/riskm-6.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-7.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-8.jpg" alt="" />
-                         </div>
-                   </div>
+        <div>
+            <p className='lg:text-3xl text-2xl font-bold py-4'>Governance</p>
+            <p className='lg:text-5xl text-3xl font-extrabold text-[#12af7e] py-4'>Upholding highest
+            Governance Standards</p>
+            <p className='lg:text-2xl text-xl py-8 text-[#58595b]'>At IndianOil, we remain committed to upholding the highest standards
+            of integrity and transparency to ensure accountability of our operations.
+            It enables us to maximise value creation for diverse stakeholders
+            including employees, contractors, shareholders, vendors, customers
+            and community . This dedication to excellence nurtures trust, builds
+            enduring relationships and ensures our readiness to meet objectives by
+            consistently embracing the best practices.</p>
+        </div>
+        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6 my-4'>
+             <div>
+                 <p className='text-[#f37126] font-bold py-4'>Approaching Strategy with Forwardthinking
+                 Guidance</p>
+                 <p className='text-xl'>We place high value on visionary leadership
+                    and excellent corporate governance. The
+                    Board of Directors greatly influences
+                    our strategic direction, ethical approach
+                    and efficient decision-making. For us to
+                    effectively integrate strategic initiatives, risk
+                    management, performance optimisation
+                    and sustainable development into our
+                    operations, critical decisions must be
+                    made using independent and wellinformed
+                    judgement.</p>
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold py-4 text-xl'>Macroeconomic Volatility Risk</p>
-                  <p className='py-8 text-xl'>As a major player in the energy sector, we face various macroeconomic risks that can impact our operational and financial
-                    performance. One significant macroeconomic risk is the volatility in global crude oil prices. Factors such as geopolitical tensions,
-                    supply-demand dynamics, and global economic conditions can lead to price volatility, posing challenges for our financial
-                    stability and planning.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div>
-                              <img src="./Governance/riskm-9.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-10.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-11.jpg" alt="" />
-                         </div>
-                   </div>
+             <div>
+                 <img src="./Governance/gov-2.png" alt="" />
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold py-4 text-xl'>Currency Exchange Risk</p>
-                  <p className='py-8 text-xl'>As we engage in international trade and the procurement of crude oil and petroleum products, we are exposed to currency exchange
-                    rate fluctuations. Changes in exchange rates impacts the cost of imports and exports, affecting our profitability. Additionally, a
-                    significant portion of our borrowing is in foreign exchange, and any depreciation of the rupee results in increased rupee outgo.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div>
-                              <img src="./Governance/riskm-12.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-13.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-14.jpg" alt="" />
-                         </div>
-                   </div>
+        </div>
+        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6 my-4'>
+             <div>
+                 <img src="./Governance/gov-4.png" alt="" />
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold py-4 text-xl'>Currency Exchange Risk</p>
-                  <p className='py-8 text-xl'>As we engage in international trade and the procurement of crude oil and petroleum products, we are exposed to currency exchange
-                    rate fluctuations. Changes in exchange rates impacts the cost of imports and exports, affecting our profitability. Additionally, a
-                    significant portion of our borrowing is in foreign exchange, and any depreciation of the rupee results in increased rupee outgo.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div>
-                              <img src="./Governance/riskm-12.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-13.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-14.jpg" alt="" />
-                         </div>
-                   </div>
+             <div>
+                 <p className='text-[#f37126] font-bold py-4'>Cultivating a Strong Organisational
+                 Culture</p>
+                 <p className='text-xl'>We understand that having a strong
+                    corporate culture is essential to our
+                    success. The Board plays a critical role
+                    in defining our strategic objectives, core
+                    values, vision and mission, which, in
+                    turn, shapes our culture. Establishing an
+                    environment that prioritises accountability,
+                    morality and honesty gives us more power
+                    as a forward-thinking business entity. Our
+                    ability to take advantage of new market
+                    opportunities and uphold a governance
+                    framework that consistently generates
+                    value for all stakeholders is made possible
+                    by our strong cultural heritage.</p>
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold text-2xl py-4'>Human Resource Risk</p>
-                  <p className='py-8 text-xl'>We encounter human resource risks pertaining to attracting and retaining a reliable talent pool. In addition, there may be skill gaps
-                    in properly adopting emerging technologies, and also risks related to succession planning for key positions. These risks can hinder
-                    organisational growth, disrupt operations, and affect long-term sustainability if not effectively managed.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div>
-                              <img src="./Governance/riskm-15.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-16.jpg" alt="" />
-                         </div>
-                         <div>
-                              <img src="./Governance/riskm-17.jpg" alt="" />
-                         </div>
-                   </div>
+        </div>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-6'>
+             <div>
+                 <img src="./Governance/gov-3.jpg" alt="" />
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold text-2xl py-4'>Human Resource Risk</p>
-                  <p className='py-8 text-xl'>We encounter human resource risks pertaining to attracting and retaining a reliable talent pool. In addition, there may be skill gaps
-                    in properly adopting emerging technologies, and also risks related to succession planning for key positions. These risks can hinder
-                    organisational growth, disrupt operations, and affect long-term sustainability if not effectively managed.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div className='w-full'>
-                              <img src="./Governance/riskm-18.jpg" alt="" />
-                         </div>
-                         <div  className='w-full'>
-                              <img src="./Governance/riskm-19.jpg" alt="" />
-                         </div>
-                         <div  className='w-full'>
-                              <img src="./Governance/riskm-20.jpg" alt="" />
-                         </div>
-                   </div>
+             <div>
+             <p className='text-[#f37126] font-bold py-4'>Building Trust Through Governance</p>
+             <p className='text-xl'>We have implemented a comprehensive
+                    Code of Conduct (CoC) for Board Members
+                    & Senior Management Personnel. This CoC
+                    provides a guiding framework highlighting
+                    the importance of personal and professional
+                    integrity, honesty and ethical conduct.</p>
              </div>
-             <div className='my-4'>
-                  <p className='text-[#f37126] font-bold text-2xl py-4'>Human Resource Risk</p>
-                  <p className='py-8 text-xl'>We encounter human resource risks pertaining to attracting and retaining a reliable talent pool. In addition, there may be skill gaps
-                    in properly adopting emerging technologies, and also risks related to succession planning for key positions. These risks can hinder
-                    organisational growth, disrupt operations, and affect long-term sustainability if not effectively managed.</p>
-                   <div className='flex lg:flex-row flex-col bg-[#fff5eb] gap-4 p-4'>
-                         <div className='w-full'>
-                              <img src="./Governance/riskm-21.jpg" alt="" />
-                         </div>
-                         <div  className='w-full'>
-                              <img src="./Governance/riskm-22.jpg" alt="" />
-                         </div>
-                         <div  className='w-full'>
-                              <img src="./Governance/riskm-23.jpg" alt="" />
-                         </div>
-                   </div>
+             <div>
+                <p className='text-[#f37126] font-bold py-4'>Promoting Integrity and
+                Accountability</p>
+                <p className='text-xl'>Our Whistleblower Policy is a fundamental
+                    part of our commitment to integrity and
+                    ethical behaviour. The policy encourages
+                    employees to act in alignment with our
+                    core values. It empowers individuals within
+                    the organisation to report any instances
+                    of misconduct, offering protection against
+                    victimisation and ensuring that concerns
+                    can be raised without fear or hesitation.</p>
              </div>
-         </div>
+        </div>
+        <div className='my-8'>
+             <img src="./Governance/gov-1.png" alt="" />
+        </div>
     </div>
   )
 }

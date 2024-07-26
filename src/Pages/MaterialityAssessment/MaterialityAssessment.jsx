@@ -38,6 +38,35 @@ function MaterialityAssessment() {
                      </div>
                 </div>
          </div>
+         <div>
+             <div>
+                 <img src="./MaterialAssess/ma-4.jpg" alt="" />
+             </div>
+             <div>
+                  <p className='text-4xl py-4 text-[#ea732f] font-bold'>lndianOil - National Trust of Economic Prosperity </p>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 py-4'>
+                      <div>
+                           <ul>
+                             <li>India's leading integrated energy company
+                            </li>
+                             <li>Ranked 94 in the Fortune 'Global 500' list (2023)</li>
+                             <li>Fulfils 50% of India's energy requirements</li>
+                             <li>Operates 9 refineries and over 19700 Km of cross­country energy highways transporting liquid and gas fuels</li>
+                           </ul>
+                      </div>
+                      <div>
+                           <ul>
+                                <li>Over 61,000 customer touchpoints across the nation</li>
+                                <li>Driven by core values of Nation-First, Care, Innovation, Passion, and Trust</li>
+                                <li>Aspires to be One Trillion Dollar Company by 2047</li>
+                           </ul>
+                      </div>
+                  </div>
+             </div>
+             <div>
+                  <img src="./MaterialAssess/ma-5.jpg" alt="" />
+             </div>
+         </div>
     </div>
   )
 }
