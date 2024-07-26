@@ -24,33 +24,42 @@ import HumanCapital from './Pages/HumanCapital/HumanCapital'
 import IntellectualCapital from './Pages/IntellectualCapital/IntellectualCapital'
 import SRCapital from './Pages/SRCapital/SRCapital'
 import LandingPage from './Pages/Landingpage/Landingpage'
+import { BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-         <Navbar/>
-         <LandingPage/>
-         {/* <IndianOil/>
-         <DiversePortfolio/> */}
-         {/* <ChairmanMessage/> */}
-          {/* <GovernanceOfRisk/> */}
-         {/* <BusinessModel/> */}
-         {/* {/* <MaterialityAssessment/> */} */}
-         {/* <EnergisedLeadership/> */}
-         {/* <BoardProfile/> */}
-         {/* <SDG/> */}
-         {/* <FinancialCapital/> */}
-         {/* <Awards/> */}
-         {/* <Governance/> */}
-         {/* <PerformanceHigh/> */}
-         {/* <StakeholderEngagement/> */}
-         {/* <ManufacturedCapital/> */}
-        {/* <NaturalCapital/>  */}
-        {/* <IntellectualCapital/> */}
-        <SRCapital/>
-         {/* <HumanCapital/> */}
-         <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+      <Navbar/>
+         <div>
+                <Routes>
+                      <Route path='/' element={<LandingPage/>}/>
+                      <Route path='/board-profile' element={<BoardProfile/>}/>
+                      <Route path='/bussiness-model' element={<BusinessModel/>}/>
+                      <Route path='/diverse-portfolio' element={<DiversePortfolio/>}/>
+                      <Route path='/chairman-messages' element={<ChairmanMessage/>}/>
+                      <Route path='/energised-leadership' element={<EnergisedLeadership/>}/>
+                      <Route path='/financial-capital' element={<FinancialCapital/>}/>
+                      <Route path='/governance' element={<Governance/>}/>
+                      <Route path='/awards' element={<Awards/>}/>
+                      <Route path='/governance-of-risk' element={<GovernanceOfRisk/>}/>
+                      <Route path='/Human-Capital' element={<HumanCapital/>}/>
+                      <Route path='/indian-oil' element={<IndianOil/>}/>
+                      <Route path='/intellectual-capital' element={<IntellectualCapital/>}/>
+                      <Route path='/manufactured-capital' element={<ManufacturedCapital/>}/>
+                      <Route path='/sdg' element={<SDG/>}/>
+                      <Route path='/materiality-assessment' element={<MaterialityAssessment/>}/>
+                      <Route path='/natural-capital' element={<NaturalCapital/>}/>
+                      <Route path='/performance-higlights' element={<PerformanceHigh/>}/>
+                      <Route path='/social-capital' element={<SRCapital/>}/>
+                      <Route path='/stakeholder-engagement' element={<StakeholderEngagement/>}/>
+                </Routes>
+         </div>
+      <Footer/>
+      </BrowserRouter>
+     </>
   )
 }
 
