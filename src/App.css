@@ -1,3 +1,23 @@
 .main-heading{
     font-size: 10px;
 }
+.p-energy{
+    background: url('./Landing/aboutpage-min.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.p-abs-pe{
+padding-left: 10%;
+font-size: 20px;
+font-weight: 500;
+line-height: 24.82px;
+text-align: left;
+
+}
+.op-highlights{
+    
+    background: url('./Landing/operational-hilights.png');
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+}
