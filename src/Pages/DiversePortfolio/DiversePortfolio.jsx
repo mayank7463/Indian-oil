@@ -15,7 +15,7 @@ function DiversePortfolio() {
        </div>
        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 my-4'>
             <div className='w-[65%]'>
-                <img src="./Portfolio/dport-7.png" alt="" />
+                <img src="./Portfolio/dport-7.jpg" alt="" />
             </div>
             <div>
                 <div className='w-[7%]'>
@@ -49,7 +49,7 @@ function DiversePortfolio() {
                   of clean energy nationwide.</p>
             </div>
             <div className='w-[65%]'>
-                <img src="./Portfolio/dport-8.png" alt="" />
+                <img src="./Portfolio/dport-8.jpg" alt="" />
             </div>
        </div>
        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 my-4'>
@@ -58,7 +58,7 @@ function DiversePortfolio() {
             </div>
             <div>
                      <div className='w-[7%]'>
-                        <img src="" alt="icon" />
+                        <img src="./Portfolio/dport-12.png" alt="icon" />
                      </div>
                      <p className='text-[#f37126] font-bold py-4'>Petrochemicals</p>
                      <p>Driven by our ambition to lead the petrochemical
@@ -81,12 +81,12 @@ function DiversePortfolio() {
                      leading to significant production growth in 2023-24.</p>
             </div>
             <div className='w-[65%]'>
-                <img src="./Portfolio/dport-10.png" alt="" />
+                <img src="./Portfolio/dport-10.jpg" alt="" />
             </div>
        </div>
        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
             <div className='w-[65%]'>
-                <img src="./Portfolio/dport-11.png" alt="" />
+                <img src="./Portfolio/dport-11.jpg" alt="" />
             </div>
             <div>
                      <div className='w-[7%]'>
@@ -143,11 +143,11 @@ function DiversePortfolio() {
              </div>
              <div className='grid lg:grid-cols-2 grid-cols-1 gap-4'>
                   <div className='flex flex-col justify-center'>
-                      <p className='lg:text-4xl text-2xl text-[#3a3589] font-extrabold'>₹8,66,345<sub>Crore</sub></p>
+                      <p className='lg:text-4xl text-2xl text-[#3a3589] font-extrabold'>₹8,66,345<span className='text-xl'>Crore</span></p>
                       <p>Revenue</p>
                  </div>
                  <div className='flex flex-col justify-center'>
-                      <p className='lg:text-4xl text-2xl text-[#3a3589] font-extrabold'>₹39,619<sub>Crore</sub></p>
+                      <p className='lg:text-4xl text-2xl text-[#3a3589] font-extrabold'>₹39,619<span className='text-xl'>Crore</span></p>
                       <p>Net profit</p>
                  </div>
              </div>
