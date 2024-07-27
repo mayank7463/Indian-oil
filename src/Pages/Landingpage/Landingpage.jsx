@@ -1,6 +1,7 @@
 import React from 'react'
 import Video from '../../Components/video/Video'
 import videois from '/Landing/IOCLHOME.webm';
+import Financial from '../../Components/Financial/Financial';
 const LandingPage = () => {
   return (
     <>
@@ -25,8 +26,8 @@ const LandingPage = () => {
            
         </div>
       </div>
+      <Financial/>
     </div>
-    
     </>
   )
 }
