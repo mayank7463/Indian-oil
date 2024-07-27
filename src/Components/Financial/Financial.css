@@ -17,7 +17,7 @@
   }
   
   .tab {
-    padding: 10px 20px;
+    padding: 5px 20px;
     cursor: pointer;
     background-color: #f0f0f0;
     border: none;
@@ -27,12 +27,27 @@
   }
   
   .tab.active {
-    background-color: #0098b6;
+    background-color: #062c22;
     color: white;
   }
   
   .tab:hover {
-    background-color: #0098b6;
+    background-color: #062c22;
     color: white;
   }
-  
+  .react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 35px;
+    z-index: 1000;
+    border: 0;
+    background: #062c22;
+    min-width: 30px;
+    min-height: 30px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .react-multiple-carousel__arrow:hover {
+    background: #65ab98
+  }
