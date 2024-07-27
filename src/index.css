@@ -10,3 +10,6 @@
     width: 87%;
     margin: auto;
 }
+body{
+    overflow-x: hidden;
+}
