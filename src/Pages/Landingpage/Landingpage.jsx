@@ -4,12 +4,14 @@ import videois from '/Landing/IOCLHOME.webm';
 import BusinessProfile from './BuisnessProfile';
 import Chairmans from './Chairmanmsg';
 import Valuecreation from './Valuecreation';
+import Capslider from '../../Components/CapSlider/CapSlider';
+import LeaderShipTeam from './LeaderShipteam';
 const LandingPage = () => {
   const [activeButton, setActiveButton] = useState("Environment");
 
   return (
     <>
-    <div>
+    <div className='overflow-x-hidden w-full'>
       <Video src={videois}/>
       <div className="p-energy h-screen relative">
         <div className='absolute left-[50%] translate-x-[-50%] top-[5%]'>
@@ -237,7 +239,13 @@ ISO 45001:2018 certified offices
       </div>
       <BusinessProfile/>
       <Chairmans/>
+      <LeaderShipTeam/>
       <Valuecreation/>
+      <div className='w-[86%] m-auto'>
+      <Capslider/>
+      
+      </div>
+     
     </div>
     
     </>
