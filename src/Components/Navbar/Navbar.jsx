@@ -54,7 +54,7 @@ const Navbar = () => {
             <nav className={`navnav ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="wrapper">
                     <Link to={"/"} className="logo">
-                        <img src="./Navbar/logo.gif" alt="Logo" className='w-[19%]' />
+                        <img src="./Navbar/indian-oil.svg" alt="Logo" className='w-[19%]' />
                     </Link>
                     <div className="burger js-menuToggle" onClick={toggleNav}>
                         <FontAwesomeIcon icon={faBars} size="2x" color='black' />
