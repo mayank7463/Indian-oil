@@ -107,12 +107,6 @@ const Navbar = () => {
                     <li>
                         <Link to="/sdg" onClick={handleMenuItemClick}>Sustainable Development Goals</Link>
                     </li>
-                    <li>
-                        <Link to=".\pdf\Orient Cement CI 24.pdf" target='_blank' onClick={handleMenuItemClick}>Corporate Information</Link>
-                    </li>
-                    <li>
-                        <Link to=".\pdf\Orient Cement CI 24.pdf" target='_blank' onClick={handleMenuItemClick}>Statutory Reports</Link>
-                    </li>
                     <hr />
                     <li>
                         <div className="openLevel js-openLevel font-medium text-[#433f3f]" onClick={openLevel}>
@@ -165,16 +159,16 @@ const Navbar = () => {
                                 </Link>
                             </li> */}
                     <li>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://orientcement.com/wp-content/uploads/2024/07/ORIENT_CEMENT_LIMITED_AR_2023-24.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
                         Corporate Information <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://orientcement.com/wp-content/uploads/2024/07/ORIENT_CEMENT_LIMITED_AR_2023-24.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
                         Statutory Reports <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://orientcement.com/wp-content/uploads/2024/07/ORIENT_CEMENT_LIMITED_AR_2023-24.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
                         Financial Statements <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://orientcement.com/wp-content/uploads/2024/07/ORIENT_CEMENT_LIMITED_AR_2023-24.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
                             Download Full Report <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
                     </li>

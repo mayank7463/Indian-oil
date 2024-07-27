@@ -2,8 +2,8 @@ import React from 'react'
 
 function MaterialityAssessment() {
   return (
-    <div className='marginal'>
-         <div className='bg-[#feeee1] p-6'>
+    <div className='marginal '>
+         <div className='bg-[#feeee1] p-6 my-8'>
                 <p className='lg:text-3xl text-2xl font-bold py-6'>Materiality Assessment</p>
                 <p className='text-[#12af7e]  font-extrabold lg:text-4xl text-3xl py-4 '>Focussing on
                 Core Issues</p>
@@ -63,7 +63,7 @@ function MaterialityAssessment() {
                       </div>
                   </div>
              </div>
-             <div>
+             <div className='my-8'>
                   <img src="./MaterialAssess/ma-5.jpg" alt="" />
              </div>
          </div>

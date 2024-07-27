@@ -3,8 +3,8 @@ import React from 'react'
 function ChairmanMessage() {
   return (
     <div className='marginal'>
-        <div>
-            <img src="" alt="" />
+        <div className='py-8'>
+            <img src="./Chairman/main.png" alt="" />
         </div>
         <div>
             <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
@@ -1486,7 +1486,7 @@ function ChairmanMessage() {
                             <img src="./Chairman/chair-39.jpg" alt="" />
                         </div>      
           </div>
-          <div>
+          <div className='py-8'>
                     <p className='py-4'>Your Company’s support for sports
                     is making a significant impact in
                     transforming India into a sporting nation.

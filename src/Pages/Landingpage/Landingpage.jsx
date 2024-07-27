@@ -27,7 +27,7 @@ const LandingPage = () => {
 <img className='absolute bottom-[5%] right-[5%]' src="./Landing/features.png" alt="" />
 
       </div>
-      <div className='op-highlights h-screen'>
+      {/* <div className='op-highlights h-screen'>
         <div className="tabular-contents">
         <div className="esg-strategy mt-4">
       <div className="flex flex-wrap gap-8 justify-center">
@@ -236,7 +236,7 @@ ISO 45001:2018 certified offices
       </div>
          </div>
         </div>
-      </div>
+      </div> */}
       <BusinessProfile/>
       <Chairmans/>
       <LeaderShipTeam/>

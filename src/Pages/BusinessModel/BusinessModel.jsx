@@ -5,7 +5,7 @@ function BusinessModel() {
   return (
     <div className='marginal'>
         <div className='mx-auto'>
-            <div className='pl-8'>
+            <div >
                 <p className='lg:text-3xl text-2xl font-bold py-4'>Business Model</p>
                 <p className='text-[#12af7e]  font-extrabold lg:text-4xl text-3xl py-4'>Delivering
                 Sustainable Value</p>
@@ -114,7 +114,7 @@ function BusinessModel() {
                    </div>
               </div>
         </div>
-        <div className='flex lg:flex-row flex-col'>
+        <div className='flex lg:flex-row flex-col my-8'>
              <div>
                  <img src="/BusinessModel/buss-18.jpg" alt="" />
              </div>

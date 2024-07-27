@@ -3,14 +3,12 @@ import React from 'react'
 function ManufacturedCapital() {
   return (
     <div className='marginal'>
-        <div className='flex lg:flex-row flex-col'>
-            <div>
+        <div>
                 <img src="./MC/mc-1.jpg" alt="" /> 
             </div>
             <div>
                 <img src="./MC/mc-2.jpg" alt="" /> 
             </div>
-        </div>
          <div className='grid lg:grid-cols-3 grid-cols-1 gap-4'>
             <div>
                 <img src="./MC/mc-3.png" alt="" />

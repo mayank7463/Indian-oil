@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import ReadMoreButton from '../../Components/ReadMoreButton/ReadMoreButton';
+import { Link } from 'react-router-dom';
 
 
 const Chairmans = () => {
@@ -12,7 +13,7 @@ const Chairmans = () => {
                 
           </div>
           <div className='flex justify-center'>
-                      <ReadMoreButton/>
+                  <Link to='/chairman-messages'><ReadMoreButton/></Link>
           </div>
     </div>
   )

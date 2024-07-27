@@ -127,7 +127,7 @@ function DiversePortfolio() {
            </div>
            
        </div> */}
-       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
+       <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 my-8'>
              <div>
                      <p className='text-[#f37126] font-bold py-4'>Dear Shareholders,</p>
                      <p >The year 2023-24 for IndianOil, was defined by
