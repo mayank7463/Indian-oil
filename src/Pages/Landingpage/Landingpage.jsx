@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
 import Video from '../../Components/video/Video'
 import videois from '/Landing/IOCLHOME.webm';
+import BusinessProfile from './BuisnessProfile';
+import Chairmans from './Chairmanmsg';
+import Valuecreation from './Valuecreation';
 const LandingPage = () => {
   const [activeButton, setActiveButton] = useState("Environment");
 
@@ -232,7 +235,11 @@ ISO 45001:2018 certified offices
          </div>
         </div>
       </div>
+      <BusinessProfile/>
+      <Chairmans/>
+      <Valuecreation/>
     </div>
+    
     </>
   )
 }
