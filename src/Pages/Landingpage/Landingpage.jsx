@@ -17,7 +17,7 @@ const LandingPage = () => {
     <>
     <div className='overflow-x-hidden w-full'>
       <Video src={videois}/>
-      <div className="p-energy h-screen relative">
+      <div className="p-energy relative">
         <div className='absolute left-[50%] translate-x-[-50%] top-[5%]'>
           <img src="./Landing/PositiveEnergy.png" alt="" />
           <img className='absolute top-[10%] left-[-8%]' src="./Landing/horizantal-text.png" alt="" />
