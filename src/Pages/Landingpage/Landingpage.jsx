@@ -31,7 +31,7 @@ const LandingPage = () => {
         </div>
 <img className='h-full object-cover w-full' src="./Landing/aboutpage-min.png" alt="" />
 <img className='absolute bottom-[5%] right-[5%]' src="./Landing/features.png" alt="" />
-<div className='flex justify-center py-8'>
+<div className='absolute bottom-[5%] left-[45%]'>
     <Link to='/positive-energy'><ReadMoreButton/></Link>
 </div>
 
