@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-
-
-const Carousel = ({carouselItems}) => {
+const Carousel = ({ carouselItems }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(()=>{
+
+  useEffect(() => {
     const interval = setInterval(() => {
-        setActiveIndex(prevIndex => (prevIndex + 1) % carouselItems.length);
-      }, 3000);
-   return () => clearInterval(interval);
-  },[])
+      setActiveIndex(prevIndex => (prevIndex + 1) % carouselItems.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [carouselItems.length]);
 
   return (
     <div className='carousel-container w-[86%] m-auto'>
@@ -21,19 +20,20 @@ const Carousel = ({carouselItems}) => {
               index === activeIndex && (
                 <motion.div
                   key={item.id}
-                  initial={{ opacity: 0,scale:0.8}}
-                  animate={{ opacity: 1,scale:1}}
-                  exit={{ opacity: 0,scale:0.8 }}
-                  transition={{ duration: 0.5,ease:"easeInOut" }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   <h3 className='text-orange-500 font-bold text-[30px] text-center mt-5'>{item.title}</h3>
+                  <p className='text-center text-gray-700 mt-2'>{item.description}</p>
                   <img className='w-full md:w-[80%] m-auto object-contain h-[90%]' src={item.imgSrc} alt={item.title} />
                 </motion.div>
               )
             )}
           </AnimatePresence>
         </div>
-        <div className="tabs-container  md:w-[50px] flex md:flex-col  justify-center align-middle gap-2">
+        <div className="tabs-container md:w-[50px] flex md:flex-col justify-center align-middle gap-2">
           {carouselItems.map((item, index) => (
             <button key={item.id} onClick={() => setActiveIndex(index)}>
               <img

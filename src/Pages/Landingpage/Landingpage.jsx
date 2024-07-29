@@ -8,6 +8,8 @@ import Capslider from '../../Components/CapSlider/CapSlider';
 import LeaderShipTeam from './LeaderShipteam';
 import Highlights from './Highlights'
 import Financial from '../../Components/Financial/Financial';
+import ReadMoreButton from '../../Components/ReadMoreButton/ReadMoreButton';
+import { Link } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -29,6 +31,9 @@ const LandingPage = () => {
         </div>
 <img className='h-full object-cover w-full' src="./Landing/aboutpage-min.png" alt="" />
 <img className='absolute bottom-[5%] right-[5%]' src="./Landing/features.png" alt="" />
+<div className='flex justify-center py-8'>
+    <Link to='/positive-energy'><ReadMoreButton/></Link>
+</div>
 
       </div>
       {/* <Highlights/>  */}

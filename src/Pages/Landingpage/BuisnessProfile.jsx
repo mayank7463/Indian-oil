@@ -4,13 +4,14 @@ import ReadMoreButton from '../../Components/ReadMoreButton/ReadMoreButton';
 import { Link } from 'react-router-dom';
 
 const BusinessProfile = () => {
-    const carouselItems = [
-        { id: 1, title: 'Refining, Pipelines and Marketing', imgSrc: './Portfolio/dport-7.jpg' },
-        { id: 2, title: 'Natural Gas', imgSrc: './Portfolio/dport-8.jpg' },
-        { id: 3, title: 'Petrochemicals', imgSrc: './Portfolio/dport-9.png' },
-        { id: 4, title: 'Exploration and Production.', imgSrc: './Portfolio/dport-10.jpg' },
-        { id: 4, title: 'Alternative energy and other businesses', imgSrc: './Portfolio/dport-11.jpg' },
-      ];
+  const carouselItems = [
+    { id: 1, title: 'Refining, Pipelines and Marketing', imgSrc: './Portfolio/dport-7.jpg', description: 'As one of India\'s leading downstream oil and gas companies...' },
+    { id: 2, title: 'Natural Gas', imgSrc: './Portfolio/dport-8.jpg', description: 'Foraying into the natural gas domain since 2004, we have emerged as a major player...' },
+    { id: 3, title: 'Petrochemicals', imgSrc: './Portfolio/dport-9.png', description: 'Driven by our ambition to lead the petrochemical market in India...' },
+    { id: 4, title: 'Exploration and Production', imgSrc: './Portfolio/dport-10.jpg', description: 'We are strengthening our presence in Exploration and Prodution...' },
+    { id: 5, title: 'Alternative Energy and Other Businesses', imgSrc: './Portfolio/dport-11.jpg', description: 'Committed to India’s Net-Zero aspirations...' }
+];
+
   return (
     <div>
     <div>

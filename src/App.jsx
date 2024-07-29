@@ -27,6 +27,7 @@ import LandingPage from './Pages/Landingpage/Landingpage'
 import { BrowserRouter } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
+import PositiveEnergy from './Pages/PositiveEnergy/PositiveEnergy'
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
                       <Route path='/performance-higlights' element={<PerformanceHigh/>}/>
                       <Route path='/social-capital' element={<SRCapital/>}/>
                       <Route path='/stakeholder-engagement' element={<StakeholderEngagement/>}/>
+                      <Route path='/positive-energy' element={<PositiveEnergy/>}/>
                 </Routes>
          </div>
       <Footer/>

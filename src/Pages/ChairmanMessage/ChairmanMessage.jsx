@@ -16,7 +16,17 @@ function ChairmanMessage() {
                 </div>
             </div>
             <div>
-                   <p className='py-4'>skies being refuelled by us. For us, every day
+                   <p className='py-4'>Let me share some extraordinary numbers
+                            that best describe our scale, reach, and
+                            impact. Every day, we process over 1.6
+                            Million barrels of crude oil and delight over
+                            three crore Indians through an expansive
+                            network of 61,000+ customer touchpoints,
+                            including 37,500 plus fuel stations. Every
+                            day, we deliver more than 26 Lakh LPG
+                            cylinders, even to the remotest corners of
+                            India. Every day, we fuel over 2,300 flights,
+                        with more than half of the flights in Indian skies being refuelled by us. For us, every day
                     is an opportunity to power the progress and
                     possibilities for our nation, demonstrating
                     our Core Values of Nation-First, Care,

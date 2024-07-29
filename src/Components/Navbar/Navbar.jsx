@@ -165,6 +165,9 @@ const Navbar = () => {
                         <Link className="openLevel js-openLevel font-medium " to={"./pdf/Statutory.pdf"} target='_blank' >
                         Statutory Reports <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
+                        <Link className="openLevel js-openLevel font-medium " to={"./pdf/Directors'%20Report.pdf"} target='_blank' >
+                        Directors’ Report <FontAwesomeIcon icon={faCloudDownload} />
+                        </Link>
                         <Link className="openLevel js-openLevel font-medium " to={"./pdf/IndianOil Standalone & Consolidated 18.07.2024.pdf"} target='_blank' >
                         Financial Statements <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
