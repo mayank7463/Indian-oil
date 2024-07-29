@@ -107,7 +107,7 @@ const Financial = () => {
             top: 120,
             bottom: 120,
             left:20,
-            right:70,
+            right:40,
           },
         },
         maintainAspectRatio: false,
