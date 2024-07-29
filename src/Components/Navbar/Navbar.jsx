@@ -159,14 +159,17 @@ const Navbar = () => {
                                 </Link>
                             </li> */}
                     <li>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"./pdf/IOCLCI.pdf"} target='_blank' >
                         Corporate Information <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"./pdf/Statutory.pdf"} target='_blank' >
                         Statutory Reports <FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
-                        <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
+                        <Link className="openLevel js-openLevel font-medium " to={"./pdf/IndianOil Standalone & Consolidated 18.07.2024.pdf"} target='_blank' >
                         Financial Statements <FontAwesomeIcon icon={faCloudDownload} />
+                        </Link>
+                        <Link className="openLevel js-openLevel font-medium " to={"./pdf/06_Indian Oil  Notice 15.07.2024.pdf"} target='_blank' >
+                        Notice<FontAwesomeIcon icon={faCloudDownload} />
                         </Link>
                         <Link className="openLevel js-openLevel font-medium " to={"https://www.iocl.com/download/spreadAnnualReport202324.pdf"} target='_blank' >
                             Download Full Report <FontAwesomeIcon icon={faCloudDownload} />
