@@ -91,8 +91,8 @@ text-align: left;
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-BoldItalic.woff2') format('woff2'),
-        url('DINPro-BoldItalic.woff') format('woff');
+    src: url('./font/DINPro-BoldItalic.woff2') format('woff2'),
+        url('./font/DINPro-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -100,8 +100,8 @@ text-align: left;
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-Medium.woff2') format('woff2'),
-        url('DINPro-Medium.woff') format('woff');
+    src: url('./font/DINPro-Medium.woff2') format('woff2'),
+        url('./font/DINPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -109,8 +109,8 @@ text-align: left;
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-LightItalic.woff2') format('woff2'),
-        url('DINPro-LightItalic.woff') format('woff');
+    src: url('./font/DINPro-LightItalic.woff2') format('woff2'),
+        url('./font/DINPro-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -118,8 +118,8 @@ text-align: left;
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-MediumItalic.woff2') format('woff2'),
-        url('DINPro-MediumItalic.woff') format('woff');
+    src: url('./font/DINPro-MediumItalic.woff2') format('woff2'),
+        url('./font/DINPro-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
