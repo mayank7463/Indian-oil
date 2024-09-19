@@ -27,6 +27,15 @@ import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import PositiveEnergy from './Pages/PositiveEnergy/PositiveEnergy'
 import BoardProfileHindi from './Pages/BoardProfile/BoardProfileHindi'
+import SDGHindi from './Pages/SDG/SdgHindi'
+import EnergisedLeadershipHindi from './Pages/EnergisedLeadership/EnergisedLeadHindi.jsx/EnergisedLeadershiphindi'
+import GovernanceHindi from './Pages/Governance/GovernanceHindi'
+import StakeholderEngagementHindi from './Pages/StakeholderEngagement/StakeholderEngagmentHindi'
+import MaterialityAssessmentHindi from './Pages/MaterialityAssessment/MaterialityAspectHindi'
+import BusinessModelHindi from './Pages/BusinessModel/BuisnessModelHindi'
+import SRCapitalHindi from './Pages/SRCapital/SRCapitalHindi'
+import HumanCapitalHindi from './Pages/HumanCapital/HumanCapitalHindi'
+import NaturalCapitalHindi from './Pages/NaturalCapital/NaturalCapitalHindi'
 
 function App() {
   const [hindi,SetHindi]=useState(true);
@@ -38,24 +47,24 @@ function App() {
                 <Routes>
                       <Route path='/' element={<LandingPage hindi={hindi}/>}/>
                       <Route path='/board-profile' element={!hindi?<BoardProfile/>:<BoardProfileHindi/>}/>
-                      <Route path='/bussiness-model' element={<BusinessModel/>}/>
+                      <Route path='/bussiness-model' element={!hindi?<BusinessModel/>:<BusinessModelHindi/>}/>
                       <Route path='/diverse-portfolio' element={<DiversePortfolio/>}/>
                       <Route path='/chairman-messages' element={<ChairmanMessage/>}/>
-                      <Route path='/energised-leadership' element={<EnergisedLeadership/>}/>
+                      <Route path='/energised-leadership' element={ !hindi?<EnergisedLeadership/>:<EnergisedLeadershipHindi/>}/>
                       <Route path='/financial-capital' element={<FinancialCapital/>}/>
-                      <Route path='/governance' element={<Governance/>}/>
+                      <Route path='/governance' element={!hindi? <Governance/>:<GovernanceHindi/>}/>
                       <Route path='/awards' element={<Awards/>}/>
                       <Route path='/governance-of-risk' element={<GovernanceOfRisk/>}/>
-                      <Route path='/Human-Capital' element={<HumanCapital/>}/>
+                      <Route path='/Human-Capital' element={ !hindi?<HumanCapital/>:<HumanCapitalHindi/>}/>
                       <Route path='/indian-oil' element={<IndianOil/>}/>
                       <Route path='/intellectual-capital' element={<IntellectualCapital/>}/>
                       <Route path='/manufactured-capital' element={<ManufacturedCapital/>}/>
-                      <Route path='/sdg' element={<SDG/>}/>
-                      <Route path='/materiality-assessment' element={<MaterialityAssessment/>}/>
-                      <Route path='/natural-capital' element={<NaturalCapital/>}/>
+                      <Route path='/sdg' element={!hindi?<SDG/>:<SDGHindi/>}/>
+                      <Route path='/materiality-assessment' element={ !hindi?<MaterialityAssessment/>:<MaterialityAssessmentHindi/>}/>
+                      <Route path='/natural-capital' element={!hindi?<NaturalCapital/>:<NaturalCapitalHindi/>}/>
                       <Route path='/performance-higlights' element={<PerformanceHigh/>}/>
-                      <Route path='/social-capital' element={<SRCapital/>}/>
-                      <Route path='/stakeholder-engagement' element={<StakeholderEngagement/>}/>
+                      <Route path='/social-capital' element={!hindi? <SRCapital/>:<SRCapitalHindi/>}/>
+                      <Route path='/stakeholder-engagement' element={!hindi? <StakeholderEngagement/>:<StakeholderEngagementHindi/>}/>
                       <Route path='/positive-energy' element={<PositiveEnergy/>}/>
                 </Routes>
          </div>

@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Video from '../../Components/video/Video'
 import videois from '/Landing/IOCLHOME.webm';
+import videois1 from '/IOIL.webm';
 import BusinessProfile from './BuisnessProfile';
 import Chairmans from './Chairmanmsg';
 import Valuecreation from './Valuecreation';
@@ -20,7 +21,7 @@ const LandingPage = ({hindi}) => {
   return (
     <>
     <div className='overflow-x-hidden w-full'>
-      <Video src={videois}/>
+      <Video src={hindi?videois1:videois}/>
       {!hindi&&<div className="p-energy relative">
         <div className='absolute left-[50%] translate-x-[-50%] top-[5%]'>
           <img src="./Landing/PositiveEnergy.png" alt="" />
@@ -52,8 +53,8 @@ const LandingPage = ({hindi}) => {
     {hindi&& <LeaderShipTeamHindi/>}
       <Valuecreation hindi={hindi}/>
       <div className='w-[86%] m-auto'>
-      <Capslider/>
-      <Financial/>
+      <Capslider hindi={hindi}/>
+      <Financial />
       
       </div>
      

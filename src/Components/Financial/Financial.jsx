@@ -31,7 +31,7 @@ const dataSets = {
   ],
 };
 
-const Financial = () => {
+const Financial = ({hindi}) => {
   const [activeTab, setActiveTab] = useState('input');
 
   const handleTabClick = (tab) => {

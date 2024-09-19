@@ -55,7 +55,7 @@ function BoardProfile() {
                     <img src="./BOP/bop-10.png" alt="" />
                 </div>
         </div>
-        <div>
+         <div>
               <p className='text-3xl font-bold text-[#f37126] py-4'>Independent Directors</p>
               <div className='grid lg:grid-cols-4 grid-cols-1 gap-4'>
                    <div className='w-[70%]'>

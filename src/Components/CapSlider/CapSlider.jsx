@@ -8,7 +8,7 @@ import { TextAnimation01 } from '../../Animation/TextAnimation';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const Capslider = () => {
+const Capslider = ({hindi}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -51,7 +51,7 @@ const Capslider = () => {
                 <img src="./CapImage/fc.webp"  alt="Financial Capital"/>
                 <div className='newsCaption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title smh text-white m-0'>Financial Capital</h4>
+                    <h4 className='newsCaption-title smh text-white m-0'>Financial Capital {hindi&&' (वित्तीय पूंजी)'}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                     <div className='i-wrap'>
                         <img className='i' src="./CapImage/cta.svg" alt="" />
@@ -71,7 +71,7 @@ const Capslider = () => {
                 <img src="./CapImage/mcaps.webp" alt="Manufactured Capital"/>
                 <div className='newsCaption px-4 special-caption'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title text-white  smh m-0'>Manufactured  Capital</h4>
+                    <h4 className='newsCaption-title text-white  smh m-0'>Manufactured  Capital {hindi&&' (विनिर्मित पूंजी)'}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                     <div className='i-wrap'>
                     <img className='i' src="./CapImage/cta.svg" alt="" />
@@ -91,7 +91,7 @@ const Capslider = () => {
                 <img src="./CapImage/ic.webp"  alt="Intellectual Capital"/>
                 <div className='newsCaption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title text-white smh m-0'>Intellectual Capital</h4>
+                    <h4 className='newsCaption-title text-white smh m-0'>Intellectual Capital {hindi && "( बौद्धिक पूंजी )"}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                     <div className='i-wrap'>
                     <img className='i' src="./CapImage/cta.svg" alt="" />
@@ -111,7 +111,7 @@ const Capslider = () => {
                 <img src="./CapImage/srcaps.webp" alt="Social and Relationship"/>
                 <div className='newsCaption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title smh text-white m-0'>Social and Relationship <br /> Capital</h4>
+                    <h4 className='newsCaption-title smh text-white m-0'>Social and Relationship <br /> Capital {hindi && 'सामाजिक और संबंध पूंजी'}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                     <div className='i-wrap'>
                     <img className='i' src="./CapImage/cta.svg" alt="" />
@@ -131,7 +131,7 @@ const Capslider = () => {
                 <img src="./CapImage/hc.webp" alt="Human Capital"/>
                 <div className='newsCaption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title smh text-white m-0'>Human Capital</h4>
+                    <h4 className='newsCaption-title smh text-white m-0'>Human Capital {hindi && "(मानव पूंजी)"}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right"></i> */}
                     <div className='i-wrap'>
                     <img className='i' src="./CapImage/cta.svg" alt="" />
@@ -151,7 +151,7 @@ const Capslider = () => {
                 <img src="./CapImage/ncaps.webp" alt="Social and Relationship Capital"/>
                 <div className='newsCaption special-caption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title text-white smh m-0'>Natural Capital</h4>
+                    <h4 className='newsCaption-title text-white smh m-0'>Natural Capital {hindi&& "(प्राकृतिक पूंजी)"}</h4>
                     {/* <i className="fas fa-arrow-alt-circle-right special-icon"></i> */}
                     <div className='i-wrap'>
                     <img className='i' src="./CapImage/cta.svg" alt="" />
