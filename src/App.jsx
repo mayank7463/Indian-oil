@@ -27,33 +27,51 @@ import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import PositiveEnergy from './Pages/PositiveEnergy/PositiveEnergy'
 import BoardProfileHindi from './Pages/BoardProfile/BoardProfileHindi'
+import IndianOilHindi from './Pages/IndianOil/IndianOilHindi'
+import LanguageToggle from './Components/LanguageToggle/LanguageToggle'
+import PerfomanceHighHindi from './Pages/PerformanceHigh/PerfomanceHighHindi'
+import DiversePortfolioHindi from './Pages/DiversePortfolio/DiversePortfolioHindi'
+import ChairManMessageHindi from './Pages/ChairmanMessage/ChairManMessageHindi'
+import GovernanceCapHindi from './Pages/GovernanceOfRisk/GovernanceCapHindi'
+import FinancialCapHindi from './Pages/FinancialCapital/FinancialCapHindi'
+import ManufactureCapitalHindi from './Pages/ManufacturedCapital/ManufactureCapitalHindi'
+import IntellectualCapitalHindi from './Pages/IntellectualCapital/IntellectualCapitalHindi'
 
 function App() {
-  const [hindi,SetHindi]=useState(true);
+  const [hindi,SetHindi]=useState(false);
+  const handleToggleChange = () => {
+    SetHindi(!hindi); // Toggle between Hindi and English
+  };
+
   return (
+    
     <>
       <BrowserRouter>
       <Navbar/>
+      <LanguageToggle 
+        hindi={hindi} 
+        onToggleChange={handleToggleChange} 
+      />
          <div>
                 <Routes>
                       <Route path='/' element={<LandingPage hindi={hindi}/>}/>
                       <Route path='/board-profile' element={!hindi?<BoardProfile/>:<BoardProfileHindi/>}/>
                       <Route path='/bussiness-model' element={<BusinessModel/>}/>
-                      <Route path='/diverse-portfolio' element={<DiversePortfolio/>}/>
-                      <Route path='/chairman-messages' element={<ChairmanMessage/>}/>
+                      <Route path='/diverse-portfolio' element={!hindi?<DiversePortfolio/>:<DiversePortfolioHindi/>}/>
+                      <Route path='/chairman-messages' element={!hindi?<ChairmanMessage/>:<ChairManMessageHindi/>}/>
                       <Route path='/energised-leadership' element={<EnergisedLeadership/>}/>
-                      <Route path='/financial-capital' element={<FinancialCapital/>}/>
+                      <Route path='/financial-capital' element={!hindi?<FinancialCapital/>:<FinancialCapHindi/>}/>
                       <Route path='/governance' element={<Governance/>}/>
                       <Route path='/awards' element={<Awards/>}/>
-                      <Route path='/governance-of-risk' element={<GovernanceOfRisk/>}/>
+                      <Route path='/governance-of-risk' element={!hindi?<GovernanceOfRisk/>:<GovernanceCapHindi/>}/>
                       <Route path='/Human-Capital' element={<HumanCapital/>}/>
-                      <Route path='/indian-oil' element={<IndianOil/>}/>
-                      <Route path='/intellectual-capital' element={<IntellectualCapital/>}/>
-                      <Route path='/manufactured-capital' element={<ManufacturedCapital/>}/>
+                      <Route path='/indian-oil' element={!hindi?<IndianOil/>:<IndianOilHindi/>}/>
+                      <Route path='/intellectual-capital' element={!hindi?<IntellectualCapital/>:<IntellectualCapitalHindi/>}/>
+                      <Route path='/manufactured-capital' element={!hindi?<ManufacturedCapital/>:<ManufactureCapitalHindi/>}/>
                       <Route path='/sdg' element={<SDG/>}/>
                       <Route path='/materiality-assessment' element={<MaterialityAssessment/>}/>
                       <Route path='/natural-capital' element={<NaturalCapital/>}/>
-                      <Route path='/performance-higlights' element={<PerformanceHigh/>}/>
+                      <Route path='/performance-higlights' element={!hindi?<PerformanceHigh/>:<PerfomanceHighHindi/>}/>
                       <Route path='/social-capital' element={<SRCapital/>}/>
                       <Route path='/stakeholder-engagement' element={<StakeholderEngagement/>}/>
                       <Route path='/positive-energy' element={<PositiveEnergy/>}/>
