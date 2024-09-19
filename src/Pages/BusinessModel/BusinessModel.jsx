@@ -4,6 +4,7 @@ import './BusinessModel.css'
 function BusinessModel() {
   return (
     <div className='marginal'>
+        
         <div className='mx-auto'>
             <div >
                 <p className='lg:text-3xl text-2xl font-bold py-4'>Business Model</p>

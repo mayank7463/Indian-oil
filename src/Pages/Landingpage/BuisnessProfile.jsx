@@ -1,8 +1,9 @@
 import React from 'react'
 import Carousel from '../../Components/Carousels/Carousel'
+import CarouselHindi from '../../Components/Carousels/CarouselHindi';
 
 
-const BusinessProfile = () => {
+const BusinessProfile = ({hindi}) => {
   const carouselItems = [
     { 
         id: 1, 
@@ -18,7 +19,8 @@ const BusinessProfile = () => {
         title: 'Natural Gas', 
         imgSrc: './Portfolio/dport-8.jpg', 
         description: `Foraying into the natural gas domain since 2004, we have emerged as a major player, investing in LNG sourcing, import terminals, cross-country pipelines and
-        City Gas Distribution (CGD) networks. With a sharper focus on reliability and sustainability, we are committed to expanding our reach and ensuring a steady supply
+        City Gas Distribution (CGD) networks. With a sharper focus on reliability and sustainability, we are committed to expanding oimport CarouselHindi from '../../Components/Carousels/CarouselHindi';
+ur reach and ensuring a steady supply
         of clean energy nationwide.` 
     },
     { 
@@ -42,19 +44,21 @@ const BusinessProfile = () => {
         sustainable aviation fuel, green hydrogen and more.` 
     }
 ];
+  const carouselItemsHindi = ['/Hindi/hindi03.svg','/Hindi/hindi04.svg','/Hindi/hindi05.svg','/Hindi/hindi06.svg','/Hindi/hindi07.svg'];
 
 
   return (
     <div className=''>
     <div>
       <div className='pt-5'>
-        <img className='object-contain m-auto w-[350px] md:w-[600px]' src="./Landing/Group 7.png" alt="" />
-        <p className='w-[350px] sm:w-[500px] md:w-[740px] m-auto text-[21px] text-center my-3 mb-0'>To fortify our leadership position in India’s energy landscape,we are currently overseeing various ongoing projects. With a combined capital investment of about ₹ 2.5 Lakh Crore across these projects, we aim to further strengthen our core business.</p>
+     { !hindi&&<><img className='object-contain m-auto w-[350px] md:w-[600px]' src="./Landing/Group 7.png" alt="" />
+      <p className='w-[350px] sm:w-[500px] md:w-[740px] m-auto text-[21px] text-center my-3 mb-0'>To fortify our leadership position in India’s energy landscape,we are currently overseeing various ongoing projects. With a combined capital investment of about ₹ 2.5 Lakh Crore across these projects, we aim to further strengthen our core business.</p></>}
+      {hindi&&<img className='object-contain m-auto' src="/Hindi/hindi02.svg" alt="" />}
       </div>
-      <Carousel carouselItems={carouselItems}/>
+     {!hindi&& <Carousel carouselItems={carouselItems}/>}
+     {hindi&& <CarouselHindi carouselItems={carouselItemsHindi}/>}
     </div>
     </div>
   )
 }
-
 export default BusinessProfile

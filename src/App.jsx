@@ -1,14 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import IndianOil from './Pages/IndianOil/IndianOil'
 import DiversePortfolio from './Pages/DiversePortfolio/DiversePortfolio'
 import ChairmanMessage from './Pages/ChairmanMessage/ChairmanMessage'
-
 import BusinessModel from './Pages/BusinessModel/BusinessModel'
 import MaterialityAssessment from './Pages/MaterialityAssessment/MaterialityAssessment'
-
 import EnergisedLeadership from './Pages/EnergisedLeadership/EnergisedLeadership'
 import BoardProfile from './Pages/BoardProfile/BoardProfile'
 import SDG from './Pages/SDG/SDG'
@@ -28,16 +26,18 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import PositiveEnergy from './Pages/PositiveEnergy/PositiveEnergy'
+import BoardProfileHindi from './Pages/BoardProfile/BoardProfileHindi'
 
 function App() {
+  const [hindi,SetHindi]=useState(true);
   return (
     <>
       <BrowserRouter>
       <Navbar/>
          <div>
                 <Routes>
-                      <Route path='/' element={<LandingPage/>}/>
-                      <Route path='/board-profile' element={<BoardProfile/>}/>
+                      <Route path='/' element={<LandingPage hindi={hindi}/>}/>
+                      <Route path='/board-profile' element={!hindi?<BoardProfile/>:<BoardProfileHindi/>}/>
                       <Route path='/bussiness-model' element={<BusinessModel/>}/>
                       <Route path='/diverse-portfolio' element={<DiversePortfolio/>}/>
                       <Route path='/chairman-messages' element={<ChairmanMessage/>}/>

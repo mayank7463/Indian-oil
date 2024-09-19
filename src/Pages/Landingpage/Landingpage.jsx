@@ -10,16 +10,18 @@ import Highlights from './Highlights'
 import Financial from '../../Components/Financial/Financial';
 import ReadMoreButton from '../../Components/ReadMoreButton/ReadMoreButton';
 import { Link } from 'react-router-dom';
+import ChairmansHindi from './ChairmanmsgHindi';
+import LeaderShipTeamHindi from './LeadershipTeamHindi';
 
 
-const LandingPage = () => {
+const LandingPage = ({hindi}) => {
 
 
   return (
     <>
     <div className='overflow-x-hidden w-full'>
       <Video src={videois}/>
-      <div className="p-energy relative">
+      {!hindi&&<div className="p-energy relative">
         <div className='absolute left-[50%] translate-x-[-50%] top-[5%]'>
           <img src="./Landing/PositiveEnergy.png" alt="" />
           <img className='absolute top-[10%] left-[-8%]' src="./Landing/horizantal-text.png" alt="" />
@@ -35,12 +37,20 @@ const LandingPage = () => {
     <Link to='/positive-energy'><ReadMoreButton/></Link>
 </div>
 
-      </div>
+      </div>}
+      {
+        hindi&& 
+        <div>
+        <img className='w-full object-contain' src="/Hindi/hindio1.svg" alt="" />
+        </div>
+        }
       {/* <Highlights/>  */}
-      <BusinessProfile/>
-      <Chairmans/>
-      <LeaderShipTeam/>
-      <Valuecreation/>
+      <BusinessProfile hindi={hindi}/>
+      {!hindi&&<Chairmans/>}
+      {hindi&&<ChairmansHindi/>}
+    { !hindi&& <LeaderShipTeam/>}
+    {hindi&& <LeaderShipTeamHindi/>}
+      <Valuecreation hindi={hindi}/>
       <div className='w-[86%] m-auto'>
       <Capslider/>
       <Financial/>

@@ -100,7 +100,10 @@ function DiversePortfolio() {
             </div>
             
        </div>
-       {/* <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-8 my-4'>
+
+
+       {/*
+        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-8 my-4'>
          
            <div>
                      <p className='text-[#f37126] font-bold py-4'>Dear Shareholders,</p>
@@ -126,7 +129,9 @@ function DiversePortfolio() {
                  </div>
            </div>
            
-       </div> */}
+       </div> 
+       */}
+       
        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 my-8'>
              <div>
                      <p className='text-[#f37126] font-bold py-4'>Dear Shareholders,</p>
