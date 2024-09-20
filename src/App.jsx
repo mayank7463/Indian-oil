@@ -27,44 +27,59 @@ import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import PositiveEnergy from './Pages/PositiveEnergy/PositiveEnergy'
 import BoardProfileHindi from './Pages/BoardProfile/BoardProfileHindi'
-import SDGHindi from './Pages/SDG/SdgHindi'
-import EnergisedLeadershipHindi from './Pages/EnergisedLeadership/EnergisedLeadHindi.jsx/EnergisedLeadershiphindi'
-import GovernanceHindi from './Pages/Governance/GovernanceHindi'
-import StakeholderEngagementHindi from './Pages/StakeholderEngagement/StakeholderEngagmentHindi'
-import MaterialityAssessmentHindi from './Pages/MaterialityAssessment/MaterialityAspectHindi'
+import IndianOilHindi from './Pages/IndianOil/IndianOilHindi'
+import LanguageToggle from './Components/LanguageToggle/LanguageToggle'
+import PerfomanceHighHindi from './Pages/PerformanceHigh/PerfomanceHighHindi'
+import DiversePortfolioHindi from './Pages/DiversePortfolio/DiversePortfolioHindi'
+import ChairManMessageHindi from './Pages/ChairmanMessage/ChairManMessageHindi'
+import GovernanceCapHindi from './Pages/GovernanceOfRisk/GovernanceCapHindi'
+import FinancialCapHindi from './Pages/FinancialCapital/FinancialCapHindi'
+import ManufactureCapitalHindi from './Pages/ManufacturedCapital/ManufactureCapitalHindi'
+import IntellectualCapitalHindi from './Pages/IntellectualCapital/IntellectualCapitalHindi'
 import BusinessModelHindi from './Pages/BusinessModel/BuisnessModelHindi'
-import SRCapitalHindi from './Pages/SRCapital/SRCapitalHindi'
+import EnergisedLeadershipHindi from './Pages/EnergisedLeadership/EnergisedLeadHindi.jsx/EnergisedLeadershiphindi'
 import HumanCapitalHindi from './Pages/HumanCapital/HumanCapitalHindi'
 import NaturalCapitalHindi from './Pages/NaturalCapital/NaturalCapitalHindi'
+import SRCapitalHindi from './Pages/SRCapital/SRCapitalHindi'
+import StakeholderEngagementHindi from './Pages/StakeholderEngagement/StakeholderEngagmentHindi'
 
 function App() {
-  const [hindi,SetHindi]=useState(true);
+  const [hindi,SetHindi]=useState(false);
+  const handleToggleChange = () => {
+    SetHindi(!hindi); // Toggle between Hindi and English
+  };
+
   return (
+    
     <>
       <BrowserRouter>
       <Navbar/>
+      <LanguageToggle 
+        hindi={hindi} 
+        onToggleChange={handleToggleChange} 
+      />
          <div>
                 <Routes>
                       <Route path='/' element={<LandingPage hindi={hindi}/>}/>
                       <Route path='/board-profile' element={!hindi?<BoardProfile/>:<BoardProfileHindi/>}/>
-                      <Route path='/bussiness-model' element={!hindi?<BusinessModel/>:<BusinessModelHindi/>}/>
-                      <Route path='/diverse-portfolio' element={<DiversePortfolio/>}/>
-                      <Route path='/chairman-messages' element={<ChairmanMessage/>}/>
-                      <Route path='/energised-leadership' element={ !hindi?<EnergisedLeadership/>:<EnergisedLeadershipHindi/>}/>
-                      <Route path='/financial-capital' element={<FinancialCapital/>}/>
-                      <Route path='/governance' element={!hindi? <Governance/>:<GovernanceHindi/>}/>
+                      <Route path='/bussiness-model' element={ !hindi?<BusinessModel/>:<BusinessModelHindi/>}/>
+                      <Route path='/diverse-portfolio' element={!hindi?<DiversePortfolio/>:<DiversePortfolioHindi/>}/>
+                      <Route path='/chairman-messages' element={!hindi?<ChairmanMessage/>:<ChairManMessageHindi/>}/>
+                      <Route path='/energised-leadership' element={!hindi?<EnergisedLeadership/>:<EnergisedLeadershipHindi/>}/>
+                      <Route path='/financial-capital' element={!hindi?<FinancialCapital/>:<FinancialCapHindi/>}/>
+                      <Route path='/governance' element={!hindi?<Governance/>:<GovernanceCapHindi/>}/>
                       <Route path='/awards' element={<Awards/>}/>
-                      <Route path='/governance-of-risk' element={<GovernanceOfRisk/>}/>
-                      <Route path='/Human-Capital' element={ !hindi?<HumanCapital/>:<HumanCapitalHindi/>}/>
-                      <Route path='/indian-oil' element={<IndianOil/>}/>
-                      <Route path='/intellectual-capital' element={<IntellectualCapital/>}/>
-                      <Route path='/manufactured-capital' element={<ManufacturedCapital/>}/>
-                      <Route path='/sdg' element={!hindi?<SDG/>:<SDGHindi/>}/>
-                      <Route path='/materiality-assessment' element={ !hindi?<MaterialityAssessment/>:<MaterialityAssessmentHindi/>}/>
+                      <Route path='/governance-of-risk' element={!hindi?<GovernanceOfRisk/>:<GovernanceCapHindi/>}/>
+                      <Route path='/Human-Capital' element={!hindi?<HumanCapital/>:<HumanCapitalHindi/>}/>
+                      <Route path='/indian-oil' element={!hindi?<IndianOil/>:<IndianOilHindi/>}/>
+                      <Route path='/intellectual-capital' element={!hindi?<IntellectualCapital/>:<IntellectualCapitalHindi/>}/>
+                      <Route path='/manufactured-capital' element={!hindi?<ManufacturedCapital/>:<ManufactureCapitalHindi/>}/>
+                      <Route path='/sdg' element={<SDG/>}/>
+                      <Route path='/materiality-assessment' element={!hindi?<MaterialityAssessment/>:<ManufactureCapitalHindi/>}/>
                       <Route path='/natural-capital' element={!hindi?<NaturalCapital/>:<NaturalCapitalHindi/>}/>
-                      <Route path='/performance-higlights' element={<PerformanceHigh/>}/>
-                      <Route path='/social-capital' element={!hindi? <SRCapital/>:<SRCapitalHindi/>}/>
-                      <Route path='/stakeholder-engagement' element={!hindi? <StakeholderEngagement/>:<StakeholderEngagementHindi/>}/>
+                      <Route path='/performance-higlights' element={!hindi?<PerformanceHigh/>:<PerfomanceHighHindi/>}/>
+                      <Route path='/social-capital' element={!hindi?<SRCapital/>:<SRCapitalHindi/>}/>
+                      <Route path='/stakeholder-engagement' element={!hindi?<StakeholderEngagement/>:<StakeholderEngagementHindi/>}/>
                       <Route path='/positive-energy' element={<PositiveEnergy/>}/>
                 </Routes>
          </div>

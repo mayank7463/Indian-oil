@@ -17,11 +17,10 @@ import LeaderShipTeamHindi from './LeadershipTeamHindi';
 
 const LandingPage = ({hindi}) => {
 
-
   return (
     <>
     <div className='overflow-x-hidden w-full'>
-      <Video src={hindi?videois1:videois}/>
+    {!hindi?<Video src={videois}/>:<Video src={videois1}/>}
       {!hindi&&<div className="p-energy relative">
         <div className='absolute left-[50%] translate-x-[-50%] top-[5%]'>
           <img src="./Landing/PositiveEnergy.png" alt="" />

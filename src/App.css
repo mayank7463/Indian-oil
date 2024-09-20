@@ -125,3 +125,8 @@ text-align: left;
     font-display: swap;
 }
 
+.switch{
+    position: fixed;
+    top: -60px;
+    z-index: 10000000000;
+}
